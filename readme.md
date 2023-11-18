@@ -59,3 +59,40 @@ Footer contains 3 social links that redirect to a new page when icons are clicke
     </main>
 ```
 The home page contains a small introduction for me and the website along with a photo (only recent one i have). Flexbox was once again used for the layout to keep things simple and has 3 breakpoints which change it into a column style layout as the device width reduces.
+
+### About Me Page
+```HTML
+    <main>
+        <h1 class="title">About Me!</h1>
+
+        <div class="columns">
+        <div>
+            <h2>Personal</h2>
+            <p>I'm an excited newcomer to the programming background that was heavily influenced by those around me from my father to my friends who have IT backgrounds. Growing up and playing with technology it was only right to pursue something related! </p>
+          </div>
+          <div>
+            <h2>Dev Skills</h2>
+            <ul class="language-list">
+                <h3>Web Development</h3>
+                <li>HTML</li>
+                <li>CSS</li>
+                <h3>Programming Languages</h3>
+                <li>Python</li>
+                <li>Javascript</li>
+                <li>Java</li>
+                <li>C#</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Things that i enjoy</h3>
+            <ul class="interest-list">
+                <li>Games (FPS, Sim Racing)</li>
+                <li>Basketball</li>
+                <li>Powerlifting</li>
+                <li>Anime</li>
+            </ul>
+          </div>
+        </div>
+    </main>
+```
+The about me includes more info about myself and the skills that i'm currently learning on the path to become a programmer. It also lists hobbies.

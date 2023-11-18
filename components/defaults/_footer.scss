@@ -2,6 +2,11 @@
 @import "../styles/breakpoints";
 
 body {
+    p {
+        color:white;
+        text-decoration: none;
+    }
+
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,6 +15,12 @@ body {
 
     main {
         flex: 1;
+    }
+    .socials {
+        a {
+            text-decoration: none; /* Remove underline */
+            color: white; /* Change link color */
+        }
     }
 
     // Breakpoint to adjust footer for mobile when below certain width //

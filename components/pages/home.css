@@ -88,8 +88,16 @@ body {
   flex-direction: column;
   min-height: 100dvh;
 }
+body p {
+  color: white;
+  text-decoration: none;
+}
 body main {
   flex: 1;
+}
+body .socials a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Change link color */
 }
 body footer {
   display: block;

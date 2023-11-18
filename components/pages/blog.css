@@ -119,47 +119,35 @@ body footer .socials {
   justify-content: space-evenly;
 }
 
-body h1 {
-  color: white;
-  margin: 4% auto;
-  text-align: center;
-  font-size: 2.5rem;
-}
-
-.columns {
-  color: white;
-  text-align: center;
-  font-size: 1.3rem;
-  margin: 20px auto;
-  width: 90%;
+.blog {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 20px;
 }
-.columns div {
-  width: 40%;
-  margin: 0 1%;
-  padding: 40px;
+.blog .blog-content {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
 }
-.columns div .interest-list {
-  list-style: none;
-}
-.columns div .language-list h3 {
-  font-size: 1.2rem;
+.blog .blog-content a {
+  display: block;
   text-align: center;
+  text-decoration: none;
 }
-.columns div .language-list li {
-  list-style: none;
+.blog .blog-content a img {
+  max-width: 80%; /* Adjust the percentage to make images smaller */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* To center the image within its container */
 }
+
 @media screen and (max-width: 900px) {
-  .columns div {
-    width: 100%;
-    margin: 2% 0;
+  .blog .blog-content {
+    width: calc(50% - 20px);
   }
 }
 @media screen and (max-width: 500px) {
-  .columns div {
-    width: 100%;
-    margin: 2% 0;
+  .blog .blog-content {
+    width: calc(100% - 20px);
   }
-}/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=blog.css.map */
