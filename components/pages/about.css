@@ -111,71 +111,47 @@ body footer .socials {
   justify-content: space-evenly;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Noto Sans", sans-serif;
-  box-sizing: border-box;
-}
-
-body .wrap {
-  width: 90%;
-  margin: 10px auto;
-  font-size: 1.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 80vh;
-}
-body .wrap img {
-  float: left;
-  border: 3px solid black;
-  margin-right: 10px;
-  max-width: 100%;
-  border-radius: 5%;
-}
-body .wrap .text {
+body h1 {
   color: white;
-}
-body .wrap .text h2 {
-  display: flex;
-  justify-content: center;
-  font-size: 4rem;
-}
-body .wrap .text p {
-  display: flex;
-  justify-content: center;
-  font-size: 1.4rem;
+  margin: 4% auto;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
-@media screen and (min-width: 1000px) {
-  body .wrap {
-    width: 60%;
-    text-align: center;
-  }
+.columns {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 20px auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-@media screen and (max-width: 1000px) {
-  body .wrap {
-    flex-direction: column;
-    width: 50%;
-    text-align: center;
-  }
-  body .wrap img {
-    float: none;
-    margin-right: 0;
+.columns div {
+  width: 40%;
+  margin: 0 1%;
+  padding: 40px;
+}
+.columns div .interest-list {
+  list-style: none;
+}
+.columns div .language-list h3 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.columns div .language-list li {
+  list-style: none;
+}
+@media screen and (max-width: 900px) {
+  .columns div {
+    width: 100%;
+    margin: 2% 0;
   }
 }
 @media screen and (max-width: 500px) {
-  body .wrap {
-    flex-direction: column;
+  .columns div {
+    width: 100%;
+    margin: 2% 0;
   }
-  body .wrap img {
-    float: none;
-    margin-right: 0;
-    max-width: 120%;
-    margin: 0;
-  }
-  body .wrap .text {
-    text-align: center;
-  }
-}/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=about.css.map */

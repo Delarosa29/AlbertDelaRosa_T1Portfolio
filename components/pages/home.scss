@@ -1,1 +1,89 @@
 @import "../../index";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+
+    .wrap {
+
+        width: 90%;
+        margin: 10px auto;
+        font-size: 1.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+
+
+        img {
+            float: left;
+            border: 3px solid black;
+            margin-right: 10px;
+            max-width: 100%;
+            border-radius: 5%;
+            // box-shadow: 5%;
+        }
+
+        .text {
+            color: white;
+
+            h2 {
+                display: flex;
+                justify-content: center;
+                font-size: 4rem;
+            }
+
+            p {
+                display: flex;
+                justify-content: center;
+                font-size: 1.4rem;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        .wrap {
+            width: 60%;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body .wrap {
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+
+        img {
+            float: none;
+            margin-right: 0;
+        }
+
+    }
+}
+
+@media screen and (max-width: $small) {
+    body .wrap {
+        flex-direction: column;
+
+        img {
+            float: none;
+            margin-right: 0;
+            max-width: 120%;
+            margin: 0;
+        }
+
+        .text {
+            text-align: center;
+        }
+    }
+}

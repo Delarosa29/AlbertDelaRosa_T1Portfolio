@@ -15,7 +15,6 @@ This website is a personal portfolio to demonstrate what we have learned in less
             <ul>
                 <a href="./index.html">Home</a>
                 <a href="./sites/about.html">About</a>
-                <a href="">Skills</a>
                 <a href="./sites/blog.html">Blog</a>
                 <a href="./sites/contact.html">Contact</a>
             </ul>
@@ -45,3 +44,18 @@ Created a simple responsive navigation bar using some flex that has 2 extra brea
 
 Footer contains 3 social links that redirect to a new page when icons are clicked. Used flexbox but didn't need as much breakpoints as there aren't many elements. Icons are linked to website in the form of fonts and given anchor tags for links.
 
+### Landing Page
+```HTML
+    <main>
+        <div class="wrap">
+            <img src="./components/images/Screenshot 2023-11-18 161539.png" alt="me image">
+            <div class="text">
+                <h2>Hi!</h2>
+                <p>My name is Albert! I'm an aspiring junior developer who's taken my first steps into the world of
+                    programming. Here on my website hopefully i can display some of what i've learnt and what type of
+                    new skills I'm planning to learn! Have a look around.</p>
+            </div>
+        </div>
+    </main>
+```
+The home page contains a small introduction for me and the website along with a photo (only recent one i have). Flexbox was once again used for the layout to keep things simple and has 3 breakpoints which change it into a column style layout as the device width reduces.
