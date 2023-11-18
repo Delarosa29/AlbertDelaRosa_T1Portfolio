@@ -7,7 +7,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   background: linear-gradient(90deg, rgb(177, 172, 251) 0%, rgb(0, 76, 92) 100%);
   background-size: cover;
 }
@@ -35,7 +35,7 @@ body .header .homelogo {
   font-weight: 1000;
 }
 body .header .homelogo:hover {
-  color: rgb(46, 0, 46);
+  color: hsl(261, 100%, 42%);
 }
 body .header .navbar ul {
   list-style: none;
@@ -49,7 +49,7 @@ body .header .navbar ul a {
   padding-right: 15px;
 }
 body .header .navbar ul a:hover {
-  color: hsl(300, 100%, 9%);
+  color: hsl(261, 100%, 42%);
 }
 @media screen and (max-width: 900px) {
   body .header {
@@ -73,4 +73,26 @@ body .header .navbar ul a:hover {
   body .header .navbar ul a {
     margin: 5px 5%;
   }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+body main {
+  flex: 1;
+}
+body footer {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  background-color: hsl(0, 0%, 25%);
+  color: #ffffff;
+}
+body footer .socials {
+  display: flex;
+  justify-content: space-evenly;
 }/*# sourceMappingURL=home.css.map */
