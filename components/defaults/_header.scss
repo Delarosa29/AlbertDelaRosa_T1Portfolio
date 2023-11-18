@@ -1,4 +1,5 @@
 @import "../styles/colors";
+@import "../styles/breakpoints";
 
 * {
     margin: 0;
@@ -13,11 +14,10 @@ body {
     background-size: cover;
 
     .header {
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: $medium) {
             padding: 1.2rem 5%;
         }
 
-        position: sticky;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -58,7 +58,7 @@ body {
             }
         }
 
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: $medium) {
             flex-direction: column;
             padding: 5px 5%;
             
@@ -67,20 +67,25 @@ body {
             }
         }
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: $small) {
+
             .homelogo {
                 font-size: 1.5rem;
             }
 
             .navbar {
+                display: flex;
+                justify-content: center;
+                max-width: 100%;
                 ul {
                     display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    flex-direction: row;
+                    justify-content: center;
                     padding: 0px;
-
+                    max-width: 100%;
                     a {
                         margin: 5px 5%;
+                        font-size: 1rem;
                     }
                 }
             }

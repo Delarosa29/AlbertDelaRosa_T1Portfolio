@@ -92,7 +92,33 @@ body footer {
   background-color: hsl(0, 0%, 25%);
   color: #ffffff;
 }
+@media screen and (max-width: 500px) {
+  body footer {
+    padding: 5px 5%;
+  }
+}
+body footer p {
+  padding-bottom: 5px;
+}
 body footer .socials {
   display: flex;
   justify-content: space-evenly;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.wrap {
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+.wrap img {
+  max-width: 400px;
 }/*# sourceMappingURL=index.css.map */

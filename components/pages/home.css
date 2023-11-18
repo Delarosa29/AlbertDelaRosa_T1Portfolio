@@ -12,7 +12,6 @@ body {
   background-size: cover;
 }
 body .header {
-  position: sticky;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,14 +63,21 @@ body .header .navbar ul a:hover {
   body .header .homelogo {
     font-size: 1.5rem;
   }
+  body .header .navbar {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+  }
   body .header .navbar ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     padding: 0px;
+    max-width: 100%;
   }
   body .header .navbar ul a {
     margin: 5px 5%;
+    font-size: 1rem;
   }
 }
 
@@ -92,7 +98,71 @@ body footer {
   background-color: hsl(0, 0%, 25%);
   color: #ffffff;
 }
+@media screen and (max-width: 500px) {
+  body footer {
+    padding: 5px 5%;
+  }
+}
+body footer p {
+  padding-bottom: 5px;
+}
 body footer .socials {
   display: flex;
   justify-content: space-evenly;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body .wrap {
+  width: 90%;
+  margin: 10px auto;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+body .wrap img {
+  float: left;
+  border: 3px solid black;
+  margin-right: 10px;
+  max-width: 100%;
+  border-radius: 5%;
+}
+body .wrap .text {
+  color: white;
+}
+body .wrap .text h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+}
+body .wrap .text p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1000px) {
+  body .wrap {
+    flex-direction: column;
+  }
+  body .wrap img {
+    float: none;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .wrap {
+    flex-direction: column;
+  }
+  body .wrap img {
+    float: none;
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=home.css.map */
