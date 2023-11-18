@@ -12,6 +12,7 @@ body {
         flex: 1;
     }
 
+    // Breakpoint to adjust footer for mobile when below certain width //
     footer {
         @media screen and (max-width: $small) {
             padding: 5px 5%;
