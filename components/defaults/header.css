@@ -20,6 +20,10 @@ header {
 .navbar img {
   height: 80px;
 }
+.navbar img:hover {
+  width: 105%;
+  height: 105%;
+}
 .navbar #nav {
   margin-left: auto;
   padding-right: 20px;
@@ -27,9 +31,20 @@ header {
 }
 .navbar #navitems {
   display: flex;
+  flex-wrap: wrap;
 }
 .navbar #navitems a {
   text-decoration: none;
   color: white;
-  margin-right: 15px;
+  margin-right: 25px;
+}
+.navbar #navitems a:hover {
+  color: hsl(249, 97%, 70%);
+  font-size: 120%;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    height: 50%;
+  }
 }/*# sourceMappingURL=header.css.map */
