@@ -16,26 +16,26 @@
             text-decoration: none;
 
             img {
-                max-width: 80%; /* Adjust the percentage to make images smaller */
+                max-width: 80%;
                 height: auto;
                 display: block;
-                margin: 0 auto; /* To center the image within its container */
+                margin: 0 auto;
             }
         }
     }
-}
 
 
-@media screen and (max-width: $medium) {
-    .blog .blog-content {
-        width: calc(50% - 20px); 
+    @media screen and (max-width: $medium) {
+        .blog .blog-content {
+            width: calc(50% - 20px);
+        }
     }
-}
 
 
 
-@media screen and (max-width: $small) {
-    .blog .blog-content {
-        width: calc(100% - 20px); 
+    @media screen and (max-width: $small) {
+        .blog .blog-content {
+            width: calc(100% - 20px);
+        }
     }
 }

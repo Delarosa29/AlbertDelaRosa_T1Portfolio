@@ -96,8 +96,8 @@ body main {
   flex: 1;
 }
 body .socials a {
-  text-decoration: none; /* Remove underline */
-  color: white; /* Change link color */
+  text-decoration: none;
+  color: white;
 }
 body footer {
   display: block;
@@ -135,19 +135,18 @@ body footer .socials {
   text-decoration: none;
 }
 .blog .blog-content a img {
-  max-width: 80%; /* Adjust the percentage to make images smaller */
+  max-width: 80%;
   height: auto;
   display: block;
-  margin: 0 auto; /* To center the image within its container */
+  margin: 0 auto;
 }
-
 @media screen and (max-width: 900px) {
-  .blog .blog-content {
+  .blog .blog .blog-content {
     width: calc(50% - 20px);
   }
 }
 @media screen and (max-width: 500px) {
-  .blog .blog-content {
+  .blog .blog .blog-content {
     width: calc(100% - 20px);
   }
 }/*# sourceMappingURL=blog.css.map */
