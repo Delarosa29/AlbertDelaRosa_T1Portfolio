@@ -10,7 +10,7 @@
 
 body {
     min-height: 100dvh;
-    background: linear-gradient(90deg, rgba(177,172,251,1) 0%, rgba(0,76,92,1) 100%);
+    background: linear-gradient(90deg, rgba(177, 172, 251, 1) 0%, rgba(0, 76, 92, 1) 100%);
     background-size: cover;
 
     // Breakpoint for header //
@@ -54,6 +54,7 @@ body {
 
                     &:hover {
                         color: hsl(261, 100%, 42%);
+
                     }
                 }
             }
@@ -63,7 +64,7 @@ body {
         @media screen and (max-width: $medium) {
             flex-direction: column;
             padding: 5px 5%;
-            
+
             .navbar {
                 margin-top: 1rem;
             }
@@ -80,12 +81,14 @@ body {
                 display: flex;
                 justify-content: center;
                 max-width: 100%;
+
                 ul {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     padding: 0px;
                     max-width: 100%;
+
                     a {
                         margin: 5px 5%;
                         font-size: 1rem;

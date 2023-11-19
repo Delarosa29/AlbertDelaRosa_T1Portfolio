@@ -99,6 +99,10 @@ body .socials a {
   text-decoration: none;
   color: white;
 }
+body .socials a i:hover {
+  transform: scale(1.3);
+  transition: transform 0.1s ease-in-out;
+}
 body footer {
   display: block;
   padding: 10px;
@@ -123,15 +127,34 @@ body footer .socials {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px;
+  padding: 2em;
 }
 .blog .blog-content {
-  width: calc(33.33% - 20px);
+  width: 30%;
   margin-bottom: 20px;
+  transition: transform 0.1s ease-in-out;
+}
+.blog .blog-content:hover {
+  transform: scale(105%);
+}
+.blog .blog-content h3 {
+  color: white;
+}
+.blog .blog-content p {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 .blog .blog-content a {
-  display: block;
+  display: inline-block;
   text-align: center;
+  text-decoration: none;
+  padding: 0px;
+}
+.blog .blog-content a h3 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
   text-decoration: none;
 }
 .blog .blog-content a img {
@@ -139,14 +162,22 @@ body footer .socials {
   height: auto;
   display: block;
   margin: 0 auto;
-}
-@media screen and (max-width: 900px) {
-  .blog .blog .blog-content {
-    width: calc(50% - 20px);
-  }
+  border: 4px solid black;
+  border-radius: 3%;
+  overflow: none;
 }
 @media screen and (max-width: 500px) {
-  .blog .blog .blog-content {
-    width: calc(100% - 20px);
+  .blog .blog-content {
+    width: calc(100% - 10px);
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1300px) {
+  .blog .blog-content {
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .blog .blog-content {
+    width: calc(100% - 10px);
   }
 }/*# sourceMappingURL=blog.css.map */

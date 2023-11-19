@@ -21,6 +21,15 @@ body {
             text-decoration: none;
             color: white;
         }
+
+        a {
+            i{
+                &:hover {
+                    transform: scale(1.3);
+                    transition: transform 0.1s ease-in-out;
+                }
+            }
+        }
     }
 
     // Breakpoint to adjust footer for mobile when below certain width //

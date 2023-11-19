@@ -99,6 +99,10 @@ body .socials a {
   text-decoration: none;
   color: white;
 }
+body .socials a i:hover {
+  transform: scale(1.3);
+  transition: transform 0.1s ease-in-out;
+}
 body footer {
   display: block;
   padding: 10px;
@@ -124,6 +128,8 @@ body h1 {
   margin: 4% auto;
   text-align: center;
   font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .columns {
@@ -140,6 +146,8 @@ body h1 {
   width: 40%;
   margin: 0 1%;
   padding: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 .columns div .interest-list {
   list-style: none;
@@ -147,9 +155,13 @@ body h1 {
 .columns div .language-list h3 {
   font-size: 1.2rem;
   text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 .columns div .language-list li {
   list-style: none;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 @media screen and (max-width: 900px) {
   .columns div {
