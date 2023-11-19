@@ -1,7 +1,7 @@
 # Albert Dela Rosa - T1A2 Portfolio 
 
 ## Overview
-This website is a personal portfolio to demonstrate what we have learned in lessons regarding HTML & CSS. My goal is to have a presentable and functional website that showcases myself as well as applying the skills i have developed in basic web development.
+This website is a personal portfolio to demonstrate what we have learned in lessons regarding HTML & CSS. My goal is to have a presentable and functional website that showcases myself as well as applying the skills i have developed in web development.
 
 ## Components of Website
 
@@ -244,3 +244,7 @@ Blog list page includes all blog posts and texts using CSS Grid layout. Used onl
     </main>
 ```
 Contact page includes a form submission with name, email, subject and message with submit button.
+
+# Layout
+## Wireframe of Pages
+###
