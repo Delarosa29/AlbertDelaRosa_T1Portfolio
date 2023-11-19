@@ -121,4 +121,76 @@ body footer p {
 body footer .socials {
   display: flex;
   justify-content: space-evenly;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+main h2 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+main form {
+  border-radius: 5%;
+  padding: 20px;
+  max-width: 400px;
+  width: 80%;
+}
+main form .bottom {
+  font-size: 5rem;
+}
+main form .form-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+main form .form-box label {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+main form .form-box .form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: none;
+}
+main form .form-box .form-input:focus {
+  outline: none;
+  border-color: hsl(251, 94%, 65%);
+  box-shadow: 0px 0px 10px 3px hsl(251, 94%, 65%);
+}
+main form #button {
+  display: flex;
+  justify-content: center;
+}
+main form #button #send {
+  font-size: 1.3rem;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  min-width: 30px;
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 500px) {
+  form .form-box {
+    display: flex;
+    flex-direction: column;
+  }
+  form .form-box label {
+    text-align: center;
+  }
+  form .form-box .form-input {
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=contact.css.map */

@@ -123,16 +123,35 @@ body footer .socials {
   justify-content: space-evenly;
 }
 
-body h1 {
+body main .pdf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+body main .pdf h2 {
+  text-align: center;
   color: white;
-  margin: 4% auto;
+  text-shadow: 2px 2px 4px #000000;
+}
+body main .pdf a {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+body main .pdf a:hover {
+  transform: scale(1.3);
+  transition: transform 0.1s ease-in-out;
+}
+body main h1 {
+  color: white;
+  margin: 2% auto;
   text-align: center;
   font-size: 2.5rem;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
-
-.columns {
+body main .columns {
   color: white;
   text-align: center;
   font-size: 1.3rem;
@@ -142,35 +161,35 @@ body h1 {
   flex-wrap: wrap;
   justify-content: center;
 }
-.columns div {
+body main .columns div {
   width: 40%;
   margin: 0 1%;
   padding: 40px;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
-.columns div .interest-list {
+body main .columns div .interest-list {
   list-style: none;
 }
-.columns div .language-list h3 {
+body main .columns div .language-list h3 {
   font-size: 1.2rem;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
-.columns div .language-list li {
+body main .columns div .language-list li {
   list-style: none;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
 @media screen and (max-width: 900px) {
-  .columns div {
+  body main .columns div {
     width: 100%;
     margin: 2% 0;
   }
 }
 @media screen and (max-width: 500px) {
-  .columns div {
+  body main .columns div {
     width: 100%;
     margin: 2% 0;
   }

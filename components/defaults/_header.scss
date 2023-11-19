@@ -1,57 +1,75 @@
+// Imports defined color and breakpoint values //
 @import "../styles/colors";
 @import "../styles/breakpoints";
 
+// Selects all elements //
 * {
     margin: 0;
     padding: 0;
+    // Applies font style //
     font-family: 'Noto Sans', sans-serif;
     box-sizing: border-box;
 }
 
+// Container of body content //
 body {
+
+    // Sets background size and color //
     min-height: 100dvh;
     background: linear-gradient(90deg, rgba(177, 172, 251, 1) 0%, rgba(0, 76, 92, 1) 100%);
     background-size: cover;
 
     // Breakpoint for header //
     .header {
+
+        // Breakpoint which switches padding below 900px //
         @media screen and (max-width: $medium) {
+
             padding: 1.2rem 5%;
         }
 
+        // Sets layout of header elements //
         display: flex;
         align-items: center;
         justify-content: space-between;
         top: 0;
         left: 0;
+        // Covers the whole width of the screen //
         width: 100%;
         padding: 1.5rem;
+        // Sets background color using defined value //
         background: $primary-color;
+        // Sets the Z axis so content is always on top of whatever content is on screen //
         z-index: 900;
 
+        // Styles name on left side of header //
         .homelogo {
             font-size: 2rem;
             color: hsl(0, 0%, 100%);
             text-decoration: none;
             font-weight: 1000;
 
+            // Changes color of text when cursor hovers over element //
             &:hover {
                 color: hsl(261, 100%, 42%);
             }
         }
 
+        // Website directories //
         .navbar {
             ul {
                 list-style: none;
                 margin: 0;
                 padding: 0;
 
+                // Sizing and color of anchors //
                 a {
                     font-size: 1.5rem;
                     color: hsl(0, 0%, 100%);
                     text-decoration: none;
                     padding-right: 15px;
 
+                    // Changes color of text when cursor hovers over element //
                     &:hover {
                         color: hsl(261, 100%, 42%);
 
@@ -62,9 +80,11 @@ body {
 
         // Breakpoint for tablets //
         @media screen and (max-width: $medium) {
+            // Moves homelogo above navbar element below 900px //
             flex-direction: column;
             padding: 5px 5%;
 
+            // Adds a gap above navbar elements from the homelogo //
             .navbar {
                 margin-top: 1rem;
             }
@@ -73,10 +93,12 @@ body {
         // Breakpoint for mobiles //
         @media screen and (max-width: $small) {
 
+            // Shrinks the name text below 500px width //
             .homelogo {
                 font-size: 1.5rem;
             }
 
+            // Changes layout to column below 500px //
             .navbar {
                 display: flex;
                 justify-content: center;
@@ -89,6 +111,7 @@ body {
                     padding: 0px;
                     max-width: 100%;
 
+                    // Shrinks navbar text //
                     a {
                         margin: 5px 5%;
                         font-size: 1rem;

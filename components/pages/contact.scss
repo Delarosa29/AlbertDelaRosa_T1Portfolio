@@ -1,1 +1,100 @@
+// Importing stylesheet containing styles, footers and headers //
 @import "../../index";
+
+// Defined values for text style //
+@mixin fonteffect {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+// Layout for content in main body //
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+
+    // Styles the "Contact Me" text //
+    h2 {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 2.5rem;
+        @include fonteffect;
+    }
+
+    // Container for contact box //
+    form {
+        border-radius: 5%;
+        padding: 20px;
+        max-width: 400px;
+        width: 80%;
+
+        .bottom {
+            font-size: 5rem;
+        }
+
+        // Changes the layout of the form content //
+        .form-box {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+
+            // Defines style for text //
+            label {
+                color: white;
+                font-size: 1.2rem;
+                margin-bottom: 5px;
+                @include fonteffect;
+            }
+
+            // Defines the text box //
+            .form-input {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 1rem;
+                resize: none;
+
+                // Makes it when the text box is selected an outline is formed around border //
+                &:focus {
+                    outline: none;
+                    border-color: hsl(251, 94%, 65%);
+                    box-shadow: 0px 0px 10px 3px hsl(251, 94%, 65%);
+                }
+            }
+        }
+
+        // Centers the button with id's of button and send //
+        #button {
+            display: flex;
+            justify-content: center;
+
+            #send {
+                font-size: 1.3rem;
+                width: 50%;
+                background-color: rgb(255, 255, 255);
+                border: none;
+                min-width: 30px;
+                border-radius: 5%;
+            }
+        }
+    }
+}
+
+// Media breakpoint so label text centers above input field when below 500px //
+@media screen and (max-width: $small) {
+    form {
+        .form-box {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                text-align: center;
+            }
+
+            .form-input {
+                margin: 0 auto;
+            }
+        }
+    }
+}

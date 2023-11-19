@@ -1,67 +1,108 @@
+// Importing stylesheet containing styles, footers and headers //
 @import "../../index";
 
-body {
-    h1 {
-        color: white;
-        margin: 4% auto;
-        text-align: center;
-        font-size: 2.5rem;
-        // Add shadow for better readability //
-        color: white;
-        text-shadow: 2px 2px 4px #000000;
-    }
-}
-.columns {
+// Defined values for text style //
+@mixin fonteffect {
     color: white;
-    text-align: center;
-    font-size: 1.3rem;
-    margin: 20px auto;
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-
-    
-
-     div {
-        width: 40%; 
-        margin: 0 1%;
-        padding: 40px;
-        // Add text shadow for all text //
-        color: white;
-        text-shadow: 2px 2px 4px #000000;
-
-        .interest-list {
-            list-style: none;
-        }
-
-        .language-list {
-            h3 {
-                font-size: 1.2rem;
-                text-align: center;
-                color: white;
-                text-shadow: 2px 2px 4px #000000;
-            }
-
-            li {
-                list-style: none;
-                color: white;
-                text-shadow: 2px 2px 4px #000000;
-            }
-        }
-
-
-
-        @media screen and (max-width: $medium) {
-            width: 100%; 
-            margin: 2% 0; 
-        }
-
-        @media screen and (max-width: $small) {
-            width: 100%; 
-            margin: 2% 0; 
-        
-        }
-    }
+    text-shadow: 2px 2px 4px #000000;
 }
 
+body {
+    main {
+
+        // Styles pdf container //
+        .pdf {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+
+            // Styles "My Experience" header //
+            h2 {
+                text-align: center;
+                @include fonteffect;
+            }
+
+            // Styles anchor tags and layout //
+            a {
+                padding-top: 15px;
+                display: flex;
+                justify-content: center;
+
+                // Enlarges pdf icon when cursor hovers //
+                &:hover {
+                    transform: scale(1.3);
+                    transition: transform 0.1s ease-in-out;
+                }
+            }
+        }
+
+        // Styles "About Me!" header text //
+        h1 {
+            color: white;
+            margin: 2% auto;
+            text-align: center;
+            font-size: 2.5rem;
+            // Add shadow for better readability //
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        // Main container for content and defines layout //
+        .columns {
+            color: white;
+            text-align: center;
+            font-size: 1.3rem;
+            margin: 20px auto;
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+            div {
+                width: 40%;
+                margin: 0 1%;
+                padding: 40px;
+                // Apply font styles using mixin //
+                @include fonteffect;
+
+                // Removes dot point on side of list //
+                .interest-list {
+                    list-style: none;
+                }
+
+                // Styling for Dev Skills content //
+                .language-list {
+                    h3 {
+                        font-size: 1.2rem;
+                        text-align: center;
+                        color: white;
+                        text-shadow: 2px 2px 4px #000000;
+                    }
+
+                    li {
+                        list-style: none;
+                        // Apply font styles using mixin //
+                        @include fonteffect;
+                    }
+                }
+
+                // Breakpoint for pixel widths below 500px and changes layout to column //
+                @media screen and (max-width: $medium) {
+                    width: 100%;
+                    margin: 2% 0;
+                }
+
+                // Breakpoint for pixel widths below 500px and changes layout to column //
+                @media screen and (max-width: $small) {
+                    width: 100%;
+                    margin: 2% 0;
+
+                }
+            }
+        }
+
+    }
+
+}

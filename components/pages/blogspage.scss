@@ -1,24 +1,35 @@
+// Importing stylesheet containing styles, footers and headers //
 @import "../../index";
 
-.maintitle {
-    padding-top: 20px;
-    text-align: center;
-    font-size: 3rem;
+// Defined values for text style //
+@mixin fonteffect {
     color: white;
     text-shadow: 2px 2px 4px #000000;
 }
 
+// Title header positioning and styling //
+.maintitle {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 3rem;
+    // Text styling using defined value //
+    @include fonteffect;
+}
+
+// Container for holding each blog post content //
 .grid-container {
     display: grid;
-    grid-template-columns: auto 60%; 
+    grid-template-columns: auto 60%;
     gap: 20px;
     padding: 5%;
 
+    // Keeps image to the left //
     .image {
         float: left;
 
+        // Positioning and styling for image //
         img {
-            max-width: 100%; 
+            max-width: 100%;
             height: auto;
             display: block;
             border-radius: 4%;
@@ -26,16 +37,21 @@
         }
     }
 
+    // Styling for blog title and text content //
     .text {
         padding: 10px;
-        color: white;
-        text-shadow: 2px 2px 4px #000000;
+        // Applies defined text styling to any text within container //
+        @include fonteffect;
         text-decoration: none;
         text-align: center;
+
+        // Blog title positioning //
         h2 {
             font-size: 2em;
             margin-bottom: 5px;
         }
+
+        // Blog text size //
         p {
             font-size: 1.5em;
             margin-bottom: 0;
@@ -43,29 +59,38 @@
     }
 }
 
+// Breakpoint for tablet devices //
 @media screen and (max-width: $medium) {
+
+    // Makes title smaller //
     .maintitle {
         font-size: 2rem;
     }
+
+    // Switches the view to single file column for easier view //
     .grid-container {
         grid-template-columns: 1fr;
         grid-auto-flow: row;
-        
+
+        // Makes blog titles smaller //
         h2 {
             font-size: 1.5rem;
         }
     }
 }
 
+// Breakpoint for mobile devices //
 @media screen and (max-width: $small) {
+
+    // Shrinks the title //
     .maintitle {
         font-size: 1.5rem;
     }
+
+    // Switches the view to single file column //
     .grid-container {
         grid-template-columns: 1fr;
         grid-auto-flow: row;
 
     }
 }
-
-

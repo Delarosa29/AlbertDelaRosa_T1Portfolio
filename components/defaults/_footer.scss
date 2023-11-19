@@ -1,35 +1,48 @@
+// Imports defined color and breakpoint values //
 @import "../styles/colors";
 @import "../styles/breakpoints";
 
+// Positions main body content//
 body {
-    p {
-        color:white;
-        text-decoration: none;
-    }
-
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100dvh; 
+    min-height: 100dvh;
 
+    // Styles text of footer //
+    p {
+        color: white;
+        text-decoration: none;
+    }
+
+    // Sets flex flexibility for content in main container //
     main {
+        // Sets flex grow, shrink and basis to scale automatically //
         flex: 1;
     }
+
+    // Container for social media links in footer //
     .socials {
+
+        // Styles anchor links //
         a {
             text-decoration: none;
             color: white;
-        }
 
-        a {
-            i{
+            // Styles the icons sourced from font awesome //
+            i {
+
+                // Enlarges the the images when the cursor hovers over icons //
                 &:hover {
                     transform: scale(1.3);
                     transition: transform 0.1s ease-in-out;
                 }
             }
         }
+
+
+
     }
 
     // Breakpoint to adjust footer for mobile when below certain width //
@@ -37,12 +50,12 @@ body {
         @media screen and (max-width: $small) {
             padding: 5px 5%;
         }
-            
-        
 
+        // position and layout style for footer //
         display: block;
         padding: 10px;
         text-align: center;
+        // Use defined background color value //
         background-color: $primary-color;
         color: #ffffff;
 
@@ -50,11 +63,11 @@ body {
             padding-bottom: 5px;
         }
 
-        
+        // Layout for socials icons //
         .socials {
-                display: flex;
-                justify-content: space-evenly;
-            }
-        
+            display: flex;
+            justify-content: space-evenly;
+        }
+
     }
 }

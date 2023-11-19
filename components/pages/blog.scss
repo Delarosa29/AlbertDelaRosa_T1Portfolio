@@ -1,36 +1,48 @@
+// Importing stylesheet containing styles, footers and headers //
 @import "../../index";
 
+// Defined values for text style //
+@mixin fonteffect {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+// Main container for blog layout//
 .blog {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 2em;
 
+    // Defines the sizing of content //
     .blog-content {
+
         // gap was set at 30% instead of 33% so that the cursor wouldn't hover even outside of the size of the blog //
         width: calc(30%);
         margin-bottom: 20px;
         transition: transform 0.1s ease-in-out;
 
+        // Enlarges blog posts when cursor hovers //
         &:hover {
             transform: scale(105%);
         }
 
+        // Gives the blog title text style //
         h3 {
             color: white;
             // text-decoration: underline;
-            
+
         }
 
+        // Aligns the date to center //
         p {
             text-align: center;
             text-decoration: none;
             // Add shadow for better readability //
-            color: white;
-            text-shadow: 2px 2px 4px #000000;
-            
+            @include fonteffect;
         }
 
+        // Styles anchor element //
         a {
             display: inline-block;
             text-align: center;
@@ -39,10 +51,10 @@
 
             h3 {
                 color: white;
-                text-shadow: 2px 2px 4px #000000;
-                text-decoration: none;
+                @include fonteffect;
             }
 
+            // Style for img appearance //
             img {
                 max-width: 80%;
                 height: auto;
@@ -57,7 +69,7 @@
                 //     transform: scale(1.1);
                 // }
             }
-            
+
         }
     }
 
@@ -67,7 +79,7 @@
             width: calc(100% - 10px);
         }
     }
-    
+
     // Added another breakpoint for 900-1300px because scaling was a bit off even for desktop //
     @media screen and (min-width: 901px) and (max-width: 1300px) {
         .blog-content {
