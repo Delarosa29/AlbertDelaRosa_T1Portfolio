@@ -18,6 +18,7 @@
 
 // Container for holding each blog post content //
 .grid-container {
+    // Used grid for layout //
     display: grid;
     grid-template-columns: auto 60%;
     gap: 20px;
