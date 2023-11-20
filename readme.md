@@ -7,8 +7,10 @@ This website is intended for potential employers and fellow peers in the industr
 
 ## Components of Website
 
-### Links
-Link to [website]([https://teal-youtiao-c496a2.netlify.app] ) and link to [Repository](https://github.com/Delarosa29/AlbertDelaRosa_T1Portfolio).
+## Links
+#### Link to [Website]([https://teal-youtiao-c496a2.netlify.app] ) 
+#### Link to [Repository](https://github.com/Delarosa29/AlbertDelaRosa_T1Portfolio)
+#### Link to [Presentation](https://www.youtube.com/watch?v=-o2nxiRJrYE)
 
 ## Header and Navigation Bar
 Created a simple responsive navigation bar using flex. The header contains navigation links to different parts of the website and also includes my name which also functions as a home button. Each nav item has a pseudo element which changes color when cursor is hovered over. At smaller viewports the layout changes to a column style with the nav items below the name.
