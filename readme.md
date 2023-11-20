@@ -3,6 +3,8 @@
 ## Overview
 This website is a personal portfolio to demonstrate what we have learned in lessons regarding HTML & CSS. My goal is to have a presentable and functional website that showcases myself as well as applying the skills i have developed in web development.
 
+This website is intended for potential employers and fellow peers in the industry.
+
 ## Components of Website
 
 ### Links
@@ -216,7 +218,12 @@ The blog landing page which showcases 6 blog posts with an image, title and date
 
 
 ## Blog Page
-Blog list page includes all blog posts and texts using CSS Grid layout. Uses only 1 HTML page to contain all blog posts rather than opening a different link for each individual blog post. At smaller viewports
+Blog list page includes all blog posts and texts using CSS Grid layout. Uses only 1 HTML page to contain all blog posts rather than opening a different link for each individual blog post. Each blog post includes a photo and text. Grid starts as a column at desktop view and switches to a row layout with smaller vieports.
+
+### Example:
+![pages](./components/images/markdownimages/pages.png)
+
+### Blogs page HTML:
 ```HTML
         <!-- span class to keep h2 a single line element  -->
         <span>
@@ -245,8 +252,13 @@ Blog list page includes all blog posts and texts using CSS Grid layout. Uses onl
         </article>
 ```
 
-
 ## Contact page
+Contact page includes a contact submission with name, email, subject and message with submit button. Flex is used to set a layout of columns for each input box and remains the same at all viewports.
+
+### Example:
+![Contact](./components/images/markdownimages/contact.png)
+
+### Contact HTML:
 ```HTML
     <main>
         <h2>Contact Me</h2>
@@ -280,13 +292,15 @@ Blog list page includes all blog posts and texts using CSS Grid layout. Uses onl
 
     </main>
 ```
-Contact page includes a contact submission with name, email, subject and message with submit button.
+
 
 ## Sitemap 
+This is the layout for the website and how the files navigate from one to another.
 
-![Sitemap](./components/images/markdownimages/sitemap.png)
-Website styling files are all placed in individual folders within components folder. 
-#### These folders include:
+![sitemap](./components/images/markdownimages/map.png)
+### Styling
+Website styling files are all placed in individual folders within components folder. These styles are then imported to corresponding html files via the stylesheet link.
+#### Component folders include:
 - Components 
     - Defaults (Styling for header and footer used across website)
         - footer.css
@@ -302,3 +316,18 @@ Website styling files are all placed in individual folders within components fol
     - Styles (Defined values for colors and media breakpoints)
         - breakpoints.css
         - colors.css
+
+### Pages
+The home page serves as an introductory screen where the user can navigate to other parts of the page using the header. Each page can be accessed through the navigation links.
+
+## Techstack
+### Front end
+- HTML
+- CSS
+
+### Deployment
+- Netifly 
+
+### Dev Tools
+- Visual Studio Code
+- GitHub
