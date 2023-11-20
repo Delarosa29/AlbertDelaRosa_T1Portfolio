@@ -8,7 +8,7 @@ This website is intended for potential employers and fellow peers in the industr
 ## Components of Website
 
 ## Links
-#### Link to [Website]([https://teal-youtiao-c496a2.netlify.app] ) 
+#### Link to [Website](https://teal-youtiao-c496a2.netlify.app) 
 #### Link to [Repository](https://github.com/Delarosa29/AlbertDelaRosa_T1Portfolio)
 #### Link to [Presentation](https://www.youtube.com/watch?v=-o2nxiRJrYE)
 
