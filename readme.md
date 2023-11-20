@@ -5,8 +5,16 @@ This website is a personal portfolio to demonstrate what we have learned in less
 
 ## Components of Website
 
-## Header and Navigation Bar
+### Links
+Link to [website]([https://teal-youtiao-c496a2.netlify.app] ) and link to [Repository](https://github.com/Delarosa29/AlbertDelaRosa_T1Portfolio).
 
+## Header and Navigation Bar
+Created a simple responsive navigation bar using flex. The header contains navigation links to different parts of the website and also includes my name which also functions as a home button. Each nav item has a pseudo element which changes color when cursor is hovered over. At smaller viewports the layout changes to a column style with the nav items below the name.
+### Example:
+![navbar](./components/images/markdownimages/navbar.png)
+
+
+### Header HTML:
 ```HTML
     <!-- Header semantic  -->
     <header class="header">
@@ -23,11 +31,22 @@ This website is a personal portfolio to demonstrate what we have learned in less
         </nav>
     </header>
 ```
-Created a simple responsive navigation bar using flex. Originally used an image for the header text which displayed my name however issues arose getting it to fit nicely when wrapping with nav bar items. Each nav element has a pseudo element which changes color when cursor is hovered over.
+
 
 ## Footer and Socials
+Footer contains 3 anchors in forms of icons which are linked from a style website. Icons enlarge with a pseudo element when cursor hovers. The layout style does not change at smaller viewports.
 
+### Example:
+![footer](./components/images/markdownimages/footer.png)
+
+### Footer HTML:
 ```HTML
+    <!-- Link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link for font awesome -->
+
     <!-- Footer semantic  -->
     <footer>
         <p>Connect with me!</p>
@@ -45,9 +64,15 @@ Created a simple responsive navigation bar using flex. Originally used an image 
         </div>
     </footer>
 ```
-Footer contains 3 anchors in forms of icons which are styles from external website. Icons enlarge when cursor hovers.
 
-## Landing Page
+
+## Home Page
+The home page contains a small introduction to myself and the website along with a photo. Flexbox was the choice for the layout to keep things simple and has 3 breakpoints which change it into a column style layout as the viewport reduces.
+
+### Example:
+![homepage](./components/images/markdownimages/homepage.png)
+
+### Home HTML:
 ```HTML
     <main>
         <!-- Main box content containing image and text  -->
@@ -64,9 +89,15 @@ Footer contains 3 anchors in forms of icons which are styles from external websi
         </div>
     </main>
 ```
-The home page contains a small introduction for me and the website along with a photo. Flexbox was once again used for the layout to keep things simple and has 3 breakpoints which change it into a column style layout as the device width reduces.
+
 
 ## About Me Page
+The about me includes more information about myself and lists the skills that i'm currently learning on the path to become a programmer with flex being used for the layout. It also includes my hobbies and a little icon serving as a hyperlink to open a new page with a mockup resume. On smaller viewports the layout turns into a column.
+
+### Example:
+![about](./components/images/markdownimages/aboutme.png)
+
+### About HTML:
 ```HTML
     <main>
         <!-- h1 semantic -->
@@ -119,9 +150,14 @@ The home page contains a small introduction for me and the website along with a 
 
     </main>
 ```
-The about me includes more info about myself and the skills that i'm currently learning on the path to become a programmer. It also includes hobbies and a little icon serving as a hyperlink to mockup resume.
 
 ## Blog Landing Page
+The blog landing page which showcases 6 blog posts with an image, title and date published. Flex is used to have the layout evenly display at multiple viewports using % scaling values. An #id tag is added to href location directories to automatically jump to location of corresponding blog post in separate page. Blog posts enlarge with when cursor hovers over.
+
+### Example:
+![blogs](./components/images/markdownimages/blogs.png)
+
+### Blogs landing page HTML:
 ```HTML
     <main>
         <div class="blog">
@@ -177,9 +213,10 @@ The about me includes more info about myself and the skills that i'm currently l
         </div>
     </main>
 ```
-Added a simple blog landing page which showcases 6 blog posts with an image, title and date published. Used flex to have it evenly display at multiple pixels. Added a #id tag to href locations to automatically jump to location of corresponding blog post in separate page. Blog posts enlarge when cursor hovers over.
+
 
 ## Blog Page
+Blog list page includes all blog posts and texts using CSS Grid layout. Uses only 1 HTML page to contain all blog posts rather than opening a different link for each individual blog post. At smaller viewports
 ```HTML
         <!-- span class to keep h2 a single line element  -->
         <span>
@@ -207,7 +244,7 @@ Added a simple blog landing page which showcases 6 blog posts with an image, tit
             </div>
         </article>
 ```
-Blog list page includes all blog posts and texts using CSS Grid layout. Used only 1 HTML page to contain all blog posts rather than opening a different link for each individual blog post.
+
 
 ## Contact page
 ```HTML
@@ -243,8 +280,25 @@ Blog list page includes all blog posts and texts using CSS Grid layout. Used onl
 
     </main>
 ```
-Contact page includes a form submission with name, email, subject and message with submit button.
+Contact page includes a contact submission with name, email, subject and message with submit button.
 
-# Layout
-## Wireframe of Pages
-###
+## Sitemap 
+
+![Sitemap](./components/images/markdownimages/sitemap.png)
+Website styling files are all placed in individual folders within components folder. 
+#### These folders include:
+- Components 
+    - Defaults (Styling for header and footer used across website)
+        - footer.css
+        - header.css
+    - Images
+        - favicon image and website images
+    - Pages (Styling for each individual HTML file)
+        - about.css
+        - blog.css
+        - blogspage.css
+        - contact.css
+        - home.css
+    - Styles (Defined values for colors and media breakpoints)
+        - breakpoints.css
+        - colors.css
